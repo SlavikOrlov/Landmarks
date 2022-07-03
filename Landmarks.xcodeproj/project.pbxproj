@@ -13,6 +13,7 @@
 		55B2BE862871D27A00E7385D /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2BE852871D27A00E7385D /* LandmarkRow.swift */; };
 		55B2BE882871D42000E7385D /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2BE872871D42000E7385D /* LandmarkList.swift */; };
 		55B2BE8A2871D60D00E7385D /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2BE892871D60D00E7385D /* LandmarkDetail.swift */; };
+		55B2BE8C2871E9C200E7385D /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2BE8B2871E9C200E7385D /* FavoriteButton.swift */; };
 		55C36033285117B200C1AEAA /* LandmarksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C36032285117B200C1AEAA /* LandmarksApp.swift */; };
 		55C36035285117B200C1AEAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C36034285117B200C1AEAA /* ContentView.swift */; };
 		55C36037285117B400C1AEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55C36036285117B400C1AEAA /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		55B2BE852871D27A00E7385D /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		55B2BE872871D42000E7385D /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		55B2BE892871D60D00E7385D /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		55B2BE8B2871E9C200E7385D /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		55C3602F285117B200C1AEAA /* Landmarks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Landmarks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C36032285117B200C1AEAA /* LandmarksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksApp.swift; sourceTree = "<group>"; };
 		55C36034285117B200C1AEAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,11 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				55C36034285117B200C1AEAA /* ContentView.swift */,
-				55C3604028511B0B00C1AEAA /* CircleImage.swift */,
-				55C3604228511CE600C1AEAA /* MapView.swift */,
-				55B2BE852871D27A00E7385D /* LandmarkRow.swift */,
-				55B2BE872871D42000E7385D /* LandmarkList.swift */,
-				55B2BE892871D60D00E7385D /* LandmarkDetail.swift */,
+				55B2BE8E2871EA6900E7385D /* Helpers */,
+				55B2BE8D2871EA5400E7385D /* Landmarks */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -76,6 +75,26 @@
 				55B2BE7C2871CD5300E7385D /* landmarkData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		55B2BE8D2871EA5400E7385D /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
+				55B2BE852871D27A00E7385D /* LandmarkRow.swift */,
+				55B2BE872871D42000E7385D /* LandmarkList.swift */,
+				55B2BE892871D60D00E7385D /* LandmarkDetail.swift */,
+			);
+			name = Landmarks;
+			sourceTree = "<group>";
+		};
+		55B2BE8E2871EA6900E7385D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				55C3604028511B0B00C1AEAA /* CircleImage.swift */,
+				55C3604228511CE600C1AEAA /* MapView.swift */,
+				55B2BE8B2871E9C200E7385D /* FavoriteButton.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		55C36026285117B200C1AEAA = {
@@ -189,6 +208,7 @@
 				55C36035285117B200C1AEAA /* ContentView.swift in Sources */,
 				55C3604328511CE600C1AEAA /* MapView.swift in Sources */,
 				55C36033285117B200C1AEAA /* LandmarksApp.swift in Sources */,
+				55B2BE8C2871E9C200E7385D /* FavoriteButton.swift in Sources */,
 				55B2BE882871D42000E7385D /* LandmarkList.swift in Sources */,
 				55B2BE8A2871D60D00E7385D /* LandmarkDetail.swift in Sources */,
 				55B2BE812871D0C300E7385D /* ModelData.swift in Sources */,
